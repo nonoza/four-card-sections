@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --cyan: #00C8C8;
+  --gray-one: #474F54;
+  --gray-two: #4D4F62;
+  --red: #FF637B;
+  --light-gray: #DADAE5;
+  --very-dark-gray: #474F54;
+  --dark-yellow: #FDBF00;
+  --orange: #FF9100;
+  --lighter-yellow: #FFDA2D;
+  --blue: #377FD2;
+  --family-font: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--family-font);
+  color: var(--gray-two);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.heading-section {
+  padding-bottom: 4.75rem;
+}
+
+.heading h1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0.17px;
+  line-height: 2rem;
+  padding-bottom: 16px;
+}
+
+.heading p {
+  font-size: 1rem;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 10px 14px var(--light-gray);
+  border-radius: 6px;
+  text-align: left;
+  padding: 2rem;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+figure {
+  align-self: flex-end;
+  margin-right: 9px;
+  margin-top: 36px;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+#supervisor {
+  border-top: 5px solid var(--cyan);
+}
+
+#teambuilding {
+  border-top: 5px solid var(--red);
+}
+
+#karma {
+  border-top: 5px solid var(--dark-yellow);
+}
+
+#calculator {
+  border-top: 5px solid var(--blue);
+}
+
+@media only screen and (min-width: 1360px) {
+  .card-container {
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+  }
+
+  #supervisor {
+    width: 20rem;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .heading p {
+    width: 37%;
+    margin: auto;
+  }
+}
