@@ -19,6 +19,7 @@
   margin: 0;
   font-family: var(--family-font);
   color: var(--gray-two);
+  background: var(--background);
 }
 
 main {
